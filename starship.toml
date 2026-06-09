@@ -1,0 +1,106 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+$os\
+$directory\
+$git_branch\
+$git_status\
+$python\
+$nodejs\
+$rust\
+$golang\
+$time\
+$line_break\
+$status\
+$character"""
+
+# ── OS Detection ─────────────────────────────────────────
+[os]
+disabled = false
+style = "bg:#2a1f43 fg:#bb9af7 bold"
+format = "[ $symbol]($style)"
+
+[os.symbols]
+Arch        = "󰣇 "
+Ubuntu      = " "
+Debian      = " "
+Fedora      = " "
+Raspbian    = " "
+Manjaro     = " "
+EndeavourOS = " "
+NixOS       = " "
+openSUSE    = " "
+Gentoo      = " "
+Alpine      = " "
+Macos       = " "
+Windows     = "󰍲 "
+Unknown     = " "
+
+# ── Directory ────────────────────────────────────────────
+[directory]
+style = "bold bg:#3d59a1 fg:#c0caf5"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncate_to_repo = true
+
+[directory.substitutions]
+"~" = "~"
+
+# ── Git ──────────────────────────────────────────────────
+[git_branch]
+style = "bg:#1f2943 fg:#7aa2f7"
+format = "[ $symbol$branch ]($style)"
+symbol = " "
+
+[git_status]
+format = '([ $all_status$ahead_behind ]($style))'
+style = "bg:#3d2217 fg:#f7768e"
+style_clean = "bg:#1f3a2a fg:#9ece6a"
+ahead  = "⇡$count"
+behind = "⇣$count"
+staged = "+$count"
+modified = "~$count"
+untracked = "?$count"
+deleted = "-$count"
+conflicted = "✖$count"
+
+# ── Languages ────────────────────────────────────────────
+[python]
+disabled = false
+style = "bg:#252535 fg:#e0af68"
+format = "[ $symbol$version ]($style)"
+symbol = " "
+
+[nodejs]
+disabled = false
+style = "bg:#252535 fg:#e0af68"
+format = "[ $symbol$version ]($style)"
+symbol = " "
+
+[rust]
+disabled = false
+style = "bg:#252535 fg:#e0af68"
+format = "[ $symbol$version ]($style)"
+symbol = " "
+
+[golang]
+disabled = false
+style = "bg:#252535 fg:#e0af68"
+format = "[ $symbol$version ]($style)"
+symbol = " "
+
+# ── Time ─────────────────────────────────────────────────
+[time]
+disabled = false
+style = "bg:#252535 fg:#bb9af7"
+format = "[ 󰥔 $time ]($style)"
+time_format = "%H:%M"
+
+# ── Prompt character ─────────────────────────────────────
+[character]
+success_symbol = "[✔ ❯](bold #7dcfff)"
+error_symbol   = "[✘ ❯](bold #f7768e)"
+
+[status]
+disabled = false
+format = ""
