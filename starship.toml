@@ -55,13 +55,12 @@ symbol = " "
 [git_status]
 format = '([ $all_status$ahead_behind ]($style))'
 style = "bg:#3d2217 fg:#f7768e"
-style_clean = "bg:#1f3a2a fg:#9ece6a"
-ahead  = "⇡$count"
-behind = "⇣$count"
-staged = "+$count"
-modified = "~$count"
-untracked = "?$count"
-deleted = "-$count"
+ahead      = "⇡$count"
+behind     = "⇣$count"
+staged     = "+$count"
+modified   = "~$count"
+untracked  = "?$count"
+deleted    = "-$count"
 conflicted = "✖$count"
 
 # ── Languages ────────────────────────────────────────────
