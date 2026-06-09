@@ -34,7 +34,7 @@ Gentoo      = " "
 Alpine      = " "
 Macos       = " "
 Windows     = "󰍲 "
-Unknown     = " "
+Unknown     = "󰣇 "
 
 # ── Directory ────────────────────────────────────────────
 [directory]
