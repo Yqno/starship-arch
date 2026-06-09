@@ -1,5 +1,5 @@
 # starship-arch
-starship config
+starship config, os autodetection for icon etc etc
 
 
 install:
