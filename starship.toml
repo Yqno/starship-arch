@@ -51,7 +51,7 @@ truncate_to_repo = true
 [git_branch]
 style = "bg:#1f2943 fg:#7aa2f7"
 format = "[ $symbol$branch ]($style)"
-symbol = " "
+symbol = " "
 
 [git_status]
 format = '([ $all_status$ahead_behind ]($style))'
@@ -69,25 +69,25 @@ conflicted = "✖$count"
 disabled = false
 style = "bg:#252535 fg:#e0af68"
 format = "[ $symbol$version ]($style)"
-symbol = " "
+symbol = " "
 
 [nodejs]
 disabled = false
 style = "bg:#252535 fg:#e0af68"
 format = "[ $symbol$version ]($style)"
-symbol = " "
+symbol = " "
 
 [rust]
 disabled = false
 style = "bg:#252535 fg:#e0af68"
 format = "[ $symbol$version ]($style)"
-symbol = " "
+symbol = " "
 
 [golang]
 disabled = false
 style = "bg:#252535 fg:#e0af68"
 format = "[ $symbol$version ]($style)"
-symbol = " "
+symbol = " "
 
 # ── Time ─────────────────────────────────────────────────
 [time]
@@ -104,3 +104,4 @@ error_symbol   = "[✘ ❯](bold #f7768e)"
 [status]
 disabled = false
 format = ""
+
